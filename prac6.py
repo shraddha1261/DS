@@ -32,7 +32,7 @@ print(list_student_rolls)
 
 print("\n\nBubble sort")
 
-list_of_number = [87,9,13,120,14,36,19]
+list_of_number = [1,90,51,12,48,6,34]
 
 def bubbleSort(list_of_number):
     
@@ -45,3 +45,4 @@ def bubbleSort(list_of_number):
                 
 bubbleSort(list_of_number)
 print(list_of_number)
+
