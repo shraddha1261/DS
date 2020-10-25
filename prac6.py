@@ -1,5 +1,18 @@
-list_student_rolls = [19,27,62,24,21,2,51]
-print("Insertion sort")
+list_student_rolls = [1,90,51,12,48,6,34]
+
+print("Selection sort")
+
+for i in range(len(list_student_rolls)):
+    min_val_index = i
+    for j in range(i+1,len(list_student_rolls)):
+        if list_student_rolls[min_val_index] > list_student_rolls[j]:
+            min_val_index = j
+            
+    list_student_rolls[i], list_student_rolls[min_val_index] = list_student_rolls[min_val_index],list_student_rolls[i]
+    
+print(list_student_rolls)
+
+print("\n\nInsertion sort")
 
 for i in range(j, len(list_student_rolls)):
     
@@ -16,22 +29,10 @@ for i in range(j, len(list_student_rolls)):
 
 print(list_student_rolls)
 
-print("\n\nSelection sort")
-
-for i in range(len(list_student_rolls)):
-    min_val_index = i
-    for j in range(i+1,len(list_student_rolls)):
-        if list_student_rolls[min_val_index] > list_student_rolls[j]:
-            min_val_index = j
-            
-    list_student_rolls[i], list_student_rolls[min_val_index] = list_student_rolls[min_val_index],list_student_rolls[i]
-    
-print(list_student_rolls)
-
 
 print("\n\nBubble sort")
 
-list_of_number = [9,6,4,18,100,60,50,99,80]
+list_of_number = [87,9,13,120,14,36,19]
 
 def bubbleSort(list_of_number):
     
